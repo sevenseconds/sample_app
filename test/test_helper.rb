@@ -2,6 +2,10 @@ ENV['RAILS_ENV'] ||= 'test'
 require File.expand_path('../../config/environment', __FILE__)
 require 'rails/test_help'
 
+# Fix RubyMine - Test framework quit unexpectedly
+require 'minitest/reporters'
+MiniTest::Reporters.use!
+
 class ActiveSupport::TestCase
   # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
   fixtures :all
