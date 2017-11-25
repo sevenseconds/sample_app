@@ -10,6 +10,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bootstrap-sass', '3.3.6'
 gem 'bcrypt', '3.1.11'
+gem 'faker', '1.6.3'
 gem 'wdm', '>= 0.1.0' if Gem.win_platform?
 
 group :development, :test do
